@@ -1,0 +1,1 @@
+import type {Metadata} from "next";import "./globals.css";export const metadata:Metadata={title:"Central de TI — Prefeitura de Miguel Pereira",description:"Protótipo funcional da Central de Chamados de TI"};export default function Layout({children}:{children:React.ReactNode}){return <html lang="pt-BR"><body>{children}</body></html>}
