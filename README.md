@@ -57,7 +57,19 @@ pnpm install
 pnpm dev
 ```
 
-## Executar a fundação da API
+## Executar o piloto local sem Docker
+
+Requisitos: Python 3.12+, Node.js 22+ e pnpm.
+
+```powershell
+.\scripts\start-pilot.ps1
+```
+
+O script cria um ambiente Python isolado, instala as dependências, inicia a API com banco SQLite persistente e abre o servidor do portal. Os chamados permanecem em `backend/central_ti.db` após reiniciar.
+
+Esse modo é indicado para apresentação e validação controlada. Ele ainda não possui autenticação corporativa, HTTPS, backup automático ou proteção de anexos e, portanto, não deve receber dados pessoais ou sensíveis.
+
+## Executar com PostgreSQL e Docker
 
 Requisitos: Docker e Docker Compose.
 
@@ -66,7 +78,7 @@ copy .env.example .env
 docker compose up --build
 ```
 
-A documentação interativa ficará em `http://localhost:8000/docs` e o health check em `http://localhost:8000/health`.
+A documentação interativa fica em `http://localhost:8000/docs` e o health check em `http://localhost:8000/health`.
 
 ## Estrutura
 

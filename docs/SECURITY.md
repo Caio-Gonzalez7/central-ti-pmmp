@@ -21,10 +21,10 @@ O preview é uma demonstração sem autenticação ou backend real. Não deve re
 
 ## Modelo de acesso inicial
 
-| Perfil | Acesso |
-|---|---|
-| Servidor | próprios chamados e mensagens públicas |
-| Técnico | fila autorizada, atendimento e notas internas |
+| Perfil        | Acesso                                           |
+| ------------- | ------------------------------------------------ |
+| Servidor      | próprios chamados e mensagens públicas           |
+| Técnico       | fila autorizada, atendimento e notas internas    |
 | Administrador | configurações, usuários e relatórios autorizados |
 
 ## Relato responsável

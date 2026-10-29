@@ -6,14 +6,14 @@ A solução seguirá um monólito modular: uma API única, organizada por domín
 
 ## Componentes
 
-| Componente | Tecnologia | Responsabilidade |
-|---|---|---|
-| Interface | React, TypeScript, Tailwind | Portal do servidor e painel técnico |
-| API | FastAPI, Pydantic, SQLAlchemy | regras, autorização e auditoria |
-| Banco | PostgreSQL | usuários, chamados, mensagens e histórico |
-| Anexos | armazenamento privado compatível com S3 | arquivos protegidos por autorização |
-| Proxy | Caddy ou Nginx | HTTPS, limites e encaminhamento |
-| Deploy | Docker Compose inicialmente | ambientes reproduzíveis |
+| Componente | Tecnologia                              | Responsabilidade                          |
+| ---------- | --------------------------------------- | ----------------------------------------- |
+| Interface  | React, TypeScript, Tailwind             | Portal do servidor e painel técnico       |
+| API        | FastAPI, Pydantic, SQLAlchemy           | regras, autorização e auditoria           |
+| Banco      | PostgreSQL                              | usuários, chamados, mensagens e histórico |
+| Anexos     | armazenamento privado compatível com S3 | arquivos protegidos por autorização       |
+| Proxy      | Caddy ou Nginx                          | HTTPS, limites e encaminhamento           |
+| Deploy     | Docker Compose inicialmente             | ambientes reproduzíveis                   |
 
 ## Módulos de domínio
 
